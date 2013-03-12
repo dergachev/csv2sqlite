@@ -5,6 +5,7 @@ require 'rubygems'
 require 'sequel'
 require 'trollop'
 require 'tempfile'
+require 'sqlite3'
 
 OPTIONS = Trollop::options do
   banner <<-EOS
