@@ -59,8 +59,8 @@ end
 
 # 
 # :call-seq:
-#   getCommonClass([1,2,3], String)         => FixNum
-#   getCommonClass([1,"bob",3], String)     => String
+#   getCommonClass([1,2,3])         => FixNum
+#   getCommonClass([1,"bob",3])     => String
 #
 # Returns the class of each element in +rows+ if same for all elements, otherwise returns nil
 #
@@ -94,7 +94,7 @@ def launchConsole(database)
   IRB.start
   catch :IRB_EXIT do
     # IRB.start should trap this but doesn't
-    exit;
+    exit
   end
 end
 
