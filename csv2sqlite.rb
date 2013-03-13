@@ -7,6 +7,13 @@ require 'trollop'
 require 'tempfile'
 require 'sqlite3'
 
+# ruby 1.8 FasterCSV compatibility
+if CSV.const_defined? :Reader
+  require 'fastercsv'
+  Object.send(:remove_const, :CSV)
+  CSV = FasterCSV
+end
+
 OPTIONS = Trollop::options do
   banner <<-EOS
 Usage:
