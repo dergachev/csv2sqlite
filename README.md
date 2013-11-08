@@ -3,6 +3,8 @@
 Ruby script to parse CSV file(s) into a sqlite database. Automatically
 generates the table schemas based on filenames, headers, and data types.
 
+*NOTE*: For an alterative implementation in python, see https://github.com/onyxfish/csvkit
+
 ## Example
 
 Let's say you have the following data in `baby-names-10.csv`:
